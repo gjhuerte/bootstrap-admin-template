@@ -52,8 +52,9 @@ i, span {
     text-align: center;
 }
 
-.sidebar.active .sidebar-header h3, .sidebar.active .CTAs {
+.sidebar.active .sidebar-header h3 ,.sidebar.active .sidebar-header h5 , .sidebar.active .sidebar-image, .sidebar.active .sidebar-abbr, .sidebar.active .CTAs {
     display: none;
+    min-width: 20px;
 }
 
 .sidebar.active .sidebar-header strong {
@@ -91,7 +92,8 @@ i, span {
 }
 
 .sidebar .sidebar-header {
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     background: #2C3E50;
 }
 
@@ -169,7 +171,7 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
-#content {
+.content {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
