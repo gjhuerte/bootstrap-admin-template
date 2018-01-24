@@ -7,20 +7,22 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.sidebar.css">
 
     <title>Administrator Panel</title>
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 0px;">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <i class="fa fa-edge" aria-hidden="true"></i>
+      <a class="navbar-brand" href="#" style="margin-left: 10px;">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+      <button type="button" id="sidebar-collapse" class="btn btn-info navbar-btn">
           <i class="glyphicon glyphicon-align-left"></i>
           <span>Toggle Sidebar</span>
       </button>
@@ -46,7 +48,7 @@
 
     <div class="wrapper">
             <!-- Sidebar Holder -->
-            <nav id="sidebar">
+            <nav class="sidebar">
                 <div class="sidebar-header">
                     <h3>Bootstrap Sidebar</h3>
                     <strong>BS</strong>
@@ -126,14 +128,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
        $(document).ready(function () {
-           $('#sidebarCollapse').on('click', function () {
-               $('#sidebar').toggleClass('active');
+           $('#sidebar-collapse').on('click', function () {
+               $('.sidebar').toggleClass('active');
            });
        });
     </script>
