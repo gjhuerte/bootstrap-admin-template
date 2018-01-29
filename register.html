@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.sidebar.css">
+
+    <title>Registration</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #22313F; 
+      }
+
+      .card-header{
+        padding-top: 20px;
+      }
+
+      .card {
+        border-radius: 0px; 
+        border: none;
+      }
+
+      #loginPanel {
+        margin-top: 20px;
+      }
+
+      #loginLabel {
+         font-size: 25px;
+      }
+
+      #loginButtonForm {
+        padding-top: 10px;
+      }
+
+      #loginButton:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="offset-md-2 col-md-8" id="loginPanel">
+          <!-- card -->
+          <div class="card bg-light">
+            <!-- card header -->
+            <div class="card-header">
+              <a href="login.html" class="btn btn-link float-right" id="loginButton"> <span class="oi oi-chevron-left"></span> Back to login </a>
+              <h1 class="display-1" id="loginLabel">Registration Form</h1>
+            </div> <!-- card header -->
+            <!-- card body -->
+            <div class="card-body">
+              <!-- loginForm -->
+              <form class="form-horizontal">
+                <!-- username -->
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="usernameHelpBlock">
+                  <small id="usernameHelpBlock" class="form-text text-muted">
+                    Your username must be between 8 and 50 characters long, can contain only letters from a to z and any numbers from 0 through 9
+                  </small>
+                </div> <!-- username -->
+                <!-- password -->
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password" aria-describedby="passwordHelpBlock">
+                  <small id="passwordHelpBlock" class="form-text text-muted">
+                    Your username must be between 8 and 50 characters long, can contain only letters from a to z and any numbers from 0 through 9
+                  </small>
+                </div> <!-- password -->
+                <!-- surname -->
+                <div class="form-group">
+                  <label for="password">Surname</label>
+                  <input type="text" class="form-control" id="surname" placeholder="Surname">
+                </div> <!-- surname -->
+                <!-- firstname -->
+                <div class="form-group">
+                  <label for="password">Firstname</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+                </div> <!-- firstname -->
+                <!-- middlename -->
+                <div class="form-group">
+                  <label for="password">Middlename</label>
+                  <input type="text" class="form-control" id="middlename" placeholder="Middlename" aria-describedby="middlenameHelpBlock">
+                  <small id="middlenameHelpBlock" class="display-text text-muted">
+                    This field can be leave as blank
+                  </small>
+                </div> <!-- middlename -->
+                <!-- birthdate -->
+                <div class="form-group">
+                  <label for="password">Birthdate</label>
+                  <input type="date" class="form-control" id="birthdate" placeholder="Birthdate" aria-describedby="birthdateHelpBlock">
+                  <small id="birthdateHelpBlock" class="display-text text-muted">
+                    This field can be leave as blank
+                  </small>
+                </div> <!-- birthdate -->
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I accept the Terms and Condition of the organization</label>
+                </div>
+                <!-- login button -->
+                <div class="form-group" id="loginButtonForm">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Register</button>
+                  <small>
+                    By using our service, you agree to our <a href="#" class="btn-link">Terms and Conditions</a> and you have read our <a href="#" class="btn-link">Data User Policy</a>, including our <a href="#" class="btn-link">Cookie Use</a>
+                  </small>
+                </div> <!-- login button -->
+              </form> <!-- loginForm -->
+            </div> <!-- card body -->
+          </div> <!-- card -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/initial.js"></script>
+
+    <script type="text/javascript">
+       $(document).ready(function () {
+           $('#sidebar-collapse').on('click', function () {
+               $('.sidebar').toggleClass('active');
+           });
+
+           $('.profile-image').initial()
+       });
+    </script>
+
+  </body>
+</html>

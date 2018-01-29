@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/open-iconic-bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: #264348;
+      }
+
+      #content {
+        margin-top: 20px;
+      }
+
+      .card {
+        border-radius: 0;
+        border: none;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <title>Blogs List</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light" style="margin-bottom: 0px;">
+      <i class="fa fa-edge" aria-hidden="true"></i>
+      <a class="navbar-brand" href="#" style="margin-left: 10px;">Lorem Ipsum</a>
+
+      <ul class="nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">Current News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="#">Blogs</a>
+        </li>
+      </ul>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="login.html">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-muted" href="login.html">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="content" class="row">
+      <div class="offset-3 col-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="clearfix"></div>
+            <div class="col-2">
+              <img data-name="N"  class="profile-image rounded-circle" style="width: 42px; height: 42px;margin-bottom: 3px;"/> 
+            </div>
+            <div class="col-4">
+              <h5 class="display-7">Lorem ipsum</h5>
+            </div>
+            <p class="lead">
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Posted On: unde omnis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/initial.js"></script>
+
+    <script type="text/javascript">
+       $(document).ready(function () {
+           $('#sidebar-collapse').on('click', function () {
+               $('.sidebar').toggleClass('active');
+           });
+
+           $('.profile-image').initial()
+       });
+    </script>
+
+  </body>
+</html>
